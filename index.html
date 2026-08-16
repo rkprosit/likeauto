@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Like Automobiles — Authorised TVS showroom in Bengaluru. All TVS bikes & scooters at best prices in India. Book a test ride today.">
+  <meta name="theme-color" content="#0d0f14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff3c1f'/%3E%3Ctext x='50' y='72' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+  <title>Like Automobiles — Authorised TVS Showroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">Like<span class="brand-accent">Automobiles</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bikes">Models</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-video">
+        <div class="hero-video-poster" style="background-image:url('video/poster.jpg')"></div>
+        <video autoplay muted loop playsinline preload="auto" poster="video/poster.jpg" aria-hidden="true">
+          <source src="video/apache-rr310-ad.mp4" type="video/mp4">
+        </video>
+      </div>
+      <button class="hero-sound" id="heroSound" type="button" aria-label="Unmute video">🔇</button>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Authorised TVS Dealer · Est. 1998</p>
+        <h1>TVS Bikes &<br><span>Scooters.</span></h1>
+        <p class="hero-sub">
+          From the legendary Apache series to the city-friendly Jupiter, Ntorq and
+          iQube — every TVS model at the best price in India.
+        </p>
+        <div class="hero-actions">
+          <a href="#bikes" class="btn btn-primary">Browse Models</a>
+          <a href="#contact" class="btn btn-ghost">Book a Test Ride</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>50,000+</strong><span>Bikes Delivered</span></div>
+          <div class="stat"><strong>100%</strong><span>Genuine TVS</span></div>
+          <div class="stat"><strong>4.9★</strong><span>Customer Rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bikes" class="bikes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">The Showroom</p>
+          <h2>All TVS Models</h2>
+          <p class="section-sub">Prices are ex-showroom (August 2026). Book a test ride today.</p>
+        </div>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="sport">Sport</button>
+          <button class="filter-btn" data-filter="commuter">Commuter</button>
+          <button class="filter-btn" data-filter="scooter">Scooter</button>
+          <button class="filter-btn" data-filter="electric">Electric</button>
+        </div>
+        <div class="bike-grid" id="bikeGrid"></div>
+        <p class="price-note">* Ex-showroom prices vary by city and state taxes. Contact us for on-road pricing in your city.</p>
+      </div>
+    </section>
+
+    <section id="why" class="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Why Like Automobiles</p>
+          <h2>Ride With Confidence</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🔧</div>
+            <h3>TVS Certified Service</h3>
+            <p>Factory-trained technicians and genuine TVS parts keep your machine in peak condition.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🚀</div>
+            <h3>Fast Delivery</h3>
+            <p>In-stock bikes ready for same-week delivery with registration and insurance handled for you.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💳</div>
+            <h3>Easy Finance & EMIs</h3>
+            <p>Flexible EMI plans, low down payments and attractive trade-in offers for your old two-wheeler.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <h3>Warranty & Assistance</h3>
+            <p>Factory warranty, extended coverage and 24x7 roadside assistance for total peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Rider Stories</p>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Bought my Apache RR 310 here. The team was patient, honest and the on-road price was unbeatable."</p>
+            <div class="author">
+              <div class="avatar">RS</div>
+              <div><strong>Rahul Sharma</strong><span>TVS Apache RR 310</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Traded in my old scooter and walked out with a brand new Jupiter the same week. Smooth as silk."</p>
+            <div class="author">
+              <div class="avatar">PK</div>
+              <div><strong>Priya Kapoor</strong><span>TVS Jupiter 110</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Their service center is the best in town. Fast, fair and they actually explain what's being fixed."</p>
+            <div class="author">
+              <div class="avatar">AK</div>
+              <div><strong>Arjun Kumar</strong><span>TVS Ntorq 125</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-wrap reveal">
+        <div class="contact-info">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2>Book Your Test Ride</h2>
+          <p>Visit us, call us, or drop a message — we'll have your keys ready.</p>
+          <div class="contact-line">📍 1420 MG Road, Bengaluru, Karnataka</div>
+          <div class="contact-line">📞 +91 98450 12345</div>
+          <div class="contact-line">✉️ hello@tvsmotoworld.in</div>
+          <div class="hours">
+            <h3>Showroom Hours</h3>
+            <p>Mon–Sat: 9:00 AM – 8:00 PM</p>
+            <p>Sunday: 10:00 AM – 5:00 PM</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <select name="bike" required>
+            <option value="" disabled selected>Select a Model</option>
+            <option>Apache RR 310</option>
+            <option>Apache RTR 310</option>
+            <option>Apache RTR 200 4V</option>
+            <option>Apache RTR 160 4V</option>
+            <option>Ronin 225</option>
+            <option>Raider 125</option>
+            <option>Jupiter 110</option>
+            <option>Jupiter 125</option>
+            <option>Ntorq 125</option>
+            <option>Ntorq 150</option>
+            <option>iQube</option>
+            <option>XL 100</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Tell us about your ride (optional)"></textarea>
+          <button type="submit" class="btn btn-primary">Request Test Ride</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="brand">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">Like<span class="brand-accent">Automobiles</span></span>
+      </div>
+      <p class="footer-copy">© 2026 Like Automobiles. Ride safe, ride free.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
