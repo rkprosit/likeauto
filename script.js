@@ -293,7 +293,8 @@ function tryHeroPlay() {
 
 if (heroVideo) {
   tryHeroPlay();
-  ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach((ev) => {
+  heroVideo.addEventListener('canplay', tryHeroPlay);
+  ['pointerdown', 'keydown', 'touchstart', 'scroll', 'visibilitychange'].forEach((ev) => {
     window.addEventListener(ev, tryHeroPlay, { passive: true });
   });
 }
